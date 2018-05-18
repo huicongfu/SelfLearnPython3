@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 #以#开头的语句是注释，注释是给人看的，可以是任意内容，解释器会忽略掉注释。
 #其他每一行都是一个语句，当语句以冒号:结尾时，缩进的语句视为代码块。
 #Python程序是大小写敏感的，如果写错了大小写，程序会报错。
@@ -23,4 +25,32 @@ print(r'\\\t\\') #输出：\\\t\\
 print('''line1
 line2
 line3''')
-print(r'''hello,\n world''')
+print(r'''hello,\n
+world''')
+
+print('-----------------------------------')
+
+a = 123 # a是整数
+print(a)
+a = 'ABC' # a 变为字符串
+print(a)
+
+print('-----------------------------------')
+
+n = 123
+f = 456.789
+s1 = 'Hello, world'
+s2 = 'Hello,\'Adam\''
+s3 = r'Hello, "Bart"'
+s4 = r'''Hello,
+Lisa!'''
+
+print('n=',n)
+print('f=',f)
+print('s1=',s1)
+print('s2=',s2)
+print('s3=',s3)
+print('s4=',s4)
+
+
+print('-----------------------------------')
