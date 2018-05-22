@@ -15,8 +15,9 @@ elif age >= 6:
 else:
 	print('kid')
 
-height = 1.68
-weight = 48
+height = float(input('Input your Height(m): '))
+
+weight = float(input('Input your Weight(kg): '))
 bmi = weight / (height * height)
 print('bmi = %f' % bmi)
 
