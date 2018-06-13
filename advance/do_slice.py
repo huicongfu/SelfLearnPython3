@@ -4,8 +4,10 @@
 # 倒数第一个元素的索引是-1。
 '''
 range() 函数返回的是一个可迭代对象（类型是对象），而不是列表类型， 所以打印的时候不会打印列表。
+方法：
 range(stop)
-range(start, stop[, step])   # eg: range(0, 5, 1)
+range(start, stop[, step])   
+# eg: range(0, 5, 1)
 
 甚至什么都不写，只写[:]就可以原样复制一个list：
 '''
@@ -27,3 +29,30 @@ print('R[::5] =',R[::5])
 
 
 print('R[-10] =',R[-10])
+
+
+def trim(s):
+	
+	while s[:1] == ' ':
+		s = s[1:]
+	while s[-1:] == ' ':
+		s = s[:-1]
+
+	return s
+
+
+# 测试:
+if trim('hello  ') != 'hello':
+    print('测试失败1!')
+elif trim('  hello') != 'hello':
+    print('测试失败2!')
+elif trim('  hello  ') != 'hello':
+    print('测试失败3!')
+elif trim('  hello  world  ') != 'hello  world':
+    print('测试失败4!')
+elif trim('') != '':
+    print('测试失败5!')
+elif trim('    ') != '':
+    print('测试失败6!')
+else:
+    print('测试成功!')
