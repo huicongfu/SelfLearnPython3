@@ -67,4 +67,31 @@ print('iter [(1, 1), (2, 4), (3, 9)]:')
 for x, y in [(1, 1), (2, 4), (3, 9)]:
 	print(x, y)
 
+print('----------------------------------------------')
+
+def findMinAndMax(L):
+	if len(L) <= 0:
+		return (None, None)
+	min = max = L[0]
+	print('min = %d,max = %d' % (min, max))
+	for i, value in enumerate(L):
+		print(i, value)
+		if min > value:
+			min = value;
+		if max < value:
+			max = value;
+	return (min, max)
+
+
+# 测试
+if findMinAndMax([]) != (None, None):
+    print('测试失败1!')
+elif findMinAndMax([7]) != (7, 7):
+    print('测试失败2!')
+elif findMinAndMax([7, 1]) != (1, 7):
+    print('测试失败3!')
+elif findMinAndMax([7, 1, 3, 9, 5]) != (1, 9):
+    print('测试失败4!')
+else:
+    print('测试成功!')
 
