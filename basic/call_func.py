@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 # 交互式命令行通过help(abs)查看abs函数的帮助信息
 # 调用函数的时候，如果传入的参数数量不对，会报TypeError
 
